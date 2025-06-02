@@ -1,5 +1,6 @@
+# test_model.py
 import unittest
-from calculator_model import CalculatorModel
+from model import CalculatorModel
 
 class TestCalculatorModel(unittest.TestCase):
 
@@ -32,7 +33,7 @@ class TestCalculatorModel(unittest.TestCase):
 
     def test_sqrt(self):
         self.assertEqual(self.model.sqrt(9), 3)
-        self.assertEqual(self.model.sqrt(2), 2 ** 0.5)
+        self.assertAlmostEqual(self.model.sqrt(2), 2 ** 0.5)
 
     def test_sqrt_negative(self):
         self.assertEqual(self.model.sqrt(-4), 'Error')

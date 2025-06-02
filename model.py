@@ -1,4 +1,4 @@
-# calculator_model.py
+# model.py
 import math
 
 class CalculatorModel:

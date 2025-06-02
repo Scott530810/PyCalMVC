@@ -55,15 +55,19 @@ python test_calculator_model.py
 
 ## File Structure
 
-```
-calculator.py             # Main application (Controller + View)
-calculator_model.py       # Model: Core calculator logic
-test_calculator_model.py  # Unit tests for the Model
-README.md
-LICENSE
-.gitignore
-screenshot.png
-```
+    controller.py      # Controller: event and logic handling
+    main.py            # Main entry point, starts the GUI
+    model.py           # Model: core calculator logic
+    view.py            # View: Tkinter UI
+    test_model.py      # Unit tests for the Model
+    LICENSE
+    README.md
+    .gitignore
+    screenshot.png
+    .github/
+        workflows/
+            python-app.yml  # (GitHub Actions CI workflow)
+
 
 ---
 
