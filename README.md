@@ -1,43 +1,80 @@
+
 # PyCalMVC
-# Tkinter Calculator (MVC Pattern)
 
-A simple calculator app built with Python's Tkinter library, featuring:
-
-- Windows-style UI (with Unicode symbols)
-- MVC architecture (Model-View-Controller separation)
-- "Immediate execution" calculation (left-to-right, no operator precedence)
-- Memory functions, percentage, square, square root, reciprocal, sign flip, backspace, etc.
-- Full unit tests for the core logic (`CalculatorModel`)
+A simple Windows-style calculator application built with Python's Tkinter, following the MVC (Model-View-Controller) design pattern.
 
 > **Note:**  
-> This project contains code and documentation generated or refined with the assistance of [ChatGPT](https://chat.openai.com/).
-> 本專案部分程式碼與說明由 OpenAI ChatGPT 協助產生與整理，僅供學習與交流用途。
+> Portions of this codebase and documentation were generated or refined with assistance from [ChatGPT](https://chat.openai.com/).
+
+---
 
 ## Demo
 
 ![screenshot](screenshot.png)
 
+---
+
 ## Features
 
-- Clean Windows-like GUI using Tkinter
-- Full MVC separation for easier maintenance
-- Immediate calculation (like Windows Standard Calculator)
-- Extensible and well-structured codebase
-- Memory operations: MC, MR, M+, M-
-- Backspace key (⌫), clear (C/CE), percent, etc.
-- Unit tests using `unittest` for the Model layer
+- Windows-inspired GUI using Tkinter
+- Clear MVC architecture for maintainability and extensibility
+- Immediate execution mode (left-to-right, no operator precedence)
+- Memory functions: MC, MR, M+, M-
+- Percentage, square, square root, reciprocal, sign flip, and backspace (⌫)
+- Comprehensive unit tests for the Model layer
+
+---
 
 ## Getting Started
 
 ### Requirements
 
-- Python 3.7 or above
+- Python 3.7 or higher
 
-### Install
+### Usage
 
-No installation needed, just clone and run:
+Clone the repository and run the application:
 
 ```bash
 git clone https://github.com/Scott530810/PyCalMVC.git
-cd tkinter-calculator
+cd PyCalMVC
 python calculator.py
+```
+
+---
+
+## Running Unit Tests
+
+To run the unit tests for the Model logic:
+
+```bash
+python test_calculator_model.py
+```
+
+---
+
+## File Structure
+
+```
+calculator.py             # Main application (Controller + View)
+calculator_model.py       # Model: Core calculator logic
+test_calculator_model.py  # Unit tests for the Model
+README.md
+LICENSE
+.gitignore
+screenshot.png
+```
+
+---
+
+## License
+
+This project is licensed under the MIT License.  
+Portions of the code and documentation were generated or adapted with the assistance of ChatGPT by OpenAI.  
+See [LICENSE](LICENSE) for details.
+
+---
+
+## Author
+
+[Scott530810](https://github.com/Scott530810)
