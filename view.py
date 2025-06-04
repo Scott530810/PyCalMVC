@@ -16,7 +16,7 @@ class CalculatorView:
         self.parent.geometry("390x530")
         self.parent.resizable(False, False)
 
-        self.display = tk.Entry(parent, font=DISPLAY_FONT, bd=0, bg=BTN_COLOR, fg='white', justify='right', state='readonly')
+        self.display = tk.Entry(parent, font=DISPLAY_FONT, bd=0, bg=BTN_COLOR, fg='white', justify='right', state='readonly', readonlybackground=BG_COLOR)
         self.display.insert(0, '0')
         self.display.grid(row=0, column=0, columnspan=4, sticky="nsew", padx=12, pady=(16,10), ipady=14)
 
