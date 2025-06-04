@@ -1,11 +1,9 @@
 # controller.py
-from model import CalculatorModel
-from view import CalculatorView
 
 class CalculatorController:
-    def __init__(self, root):
-        self.model = CalculatorModel()
-        self.view = CalculatorView(root, self)
+    def __init__(self, model, view):
+        self.model = model
+        self.view = view
         self.reset_next = False
 
     def on_button(self, label):

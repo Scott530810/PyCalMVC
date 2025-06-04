@@ -38,7 +38,7 @@ Clone the repository and run the application:
 ```bash
 git clone https://github.com/Scott530810/PyCalMVC.git
 cd PyCalMVC
-python calculator.py
+python main.py
 ```
 
 ---
@@ -48,7 +48,7 @@ python calculator.py
 To run the unit tests for the Model logic:
 
 ```bash
-python test_calculator_model.py
+python test_model.py
 ```
 
 ---
