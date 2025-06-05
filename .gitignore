@@ -69,3 +69,6 @@ Desktop.ini
 # Local envs
 .env
 .env.*
+
+#pyinstaller
+*.spec
