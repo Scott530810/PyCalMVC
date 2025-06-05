@@ -15,6 +15,7 @@ class CalculatorView:
         self.parent.configure(bg=BG_COLOR)
         self.parent.geometry("390x530")
         self.parent.resizable(False, False)
+        self.parent.bind("<Key>", self.on_key)
 
         self.display = tk.Entry(parent, font=DISPLAY_FONT, bd=0, bg=BTN_COLOR, fg='white', justify='right', state='readonly', readonlybackground=BG_COLOR)
         self.display.insert(0, '0')
@@ -50,6 +51,27 @@ class CalculatorView:
             parent.grid_columnconfigure(i, weight=1)
         for i in range(len(buttons)+1):
             parent.grid_rowconfigure(i, weight=1)
+
+    def on_key(self, event):
+        key = event.keysym
+        if key in [str(i) for i in range(10)]:
+            self.on_button(key)
+        elif key == "period" or event.char == '.':
+            self.on_button(".")
+        elif key == "plus":
+            self.on_button("+")
+        elif key == "minus":
+            self.on_button("−")
+        elif key == "asterisk":
+            self.on_button("×")
+        elif key == "slash":
+            self.on_button("÷")
+        elif key == "Return":
+            self.on_button("=")
+        elif key == "BackSpace":
+            self.on_button("⌫")
+        elif key == "Escape":
+            self.on_button("C")
 
     def on_button(self, label):
         if self.controller:
